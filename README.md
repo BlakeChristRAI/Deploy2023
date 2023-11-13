@@ -1,2 +1,2 @@
-# Deploy2023
-Deploying V1 of Radiance MVP
+# RAI2023
+MVP for Radiance AI
