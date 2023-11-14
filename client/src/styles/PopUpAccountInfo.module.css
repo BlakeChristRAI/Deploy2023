@@ -1,0 +1,233 @@
+.buttoncloseChild {
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid var(--sorta-dark);
+  box-sizing: border-box;
+  width: 32px;
+  height: 29px;
+  z-index: 0;
+}
+.x {
+  position: absolute;
+  margin: 0 !important;
+  top: 7px;
+  left: 11px;
+  font-size: 13.68px;
+  letter-spacing: -0.01em;
+  line-height: 120%;
+  font-weight: 600;
+  font-family: var(--text3);
+  color: var(--sorta-dark);
+  text-align: left;
+  z-index: 1;
+}
+.buttonclose,
+.frameclosepopup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.buttonclose {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  align-items: flex-start;
+  position: relative;
+  gap: var(--gap-3xs);
+}
+.frameclosepopup {
+  align-self: stretch;
+  align-items: flex-end;
+}
+.bidData,
+.heading1,
+.heading11 {
+  position: relative;
+  font-weight: 600;
+}
+.bidData {
+  align-self: stretch;
+  font-size: var(--big-data-size);
+  letter-spacing: -0.05em;
+}
+.heading1,
+.heading11 {
+  letter-spacing: -0.04em;
+  line-height: 107%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 51px;
+  flex-shrink: 0;
+}
+.heading11 {
+  width: 175px;
+}
+.containerjoineddata {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-5xs);
+}
+.heading12 {
+  position: relative;
+  letter-spacing: -0.04em;
+  line-height: 107%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 117px;
+  height: 51px;
+  flex-shrink: 0;
+}
+.frameaccountinfo,
+.frameprofiledetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+}
+.frameprofiledetails {
+  align-items: center;
+  gap: 19px;
+}
+.frameaccountinfo {
+  align-self: stretch;
+  border-radius: var(--br-sm);
+  background-color: rgba(255, 255, 255, 0.8);
+  align-items: flex-start;
+}
+.buyTokens {
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 110%;
+  font-weight: 600;
+}
+.carddetails {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 104px;
+}
+.button {
+  flex: 1;
+  border-radius: var(--br-sm);
+  background-color: var(--pure-white);
+  border: 2px solid var(--orange);
+  box-sizing: border-box;
+  height: 71px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--orange);
+  color: var(--pure-white);
+}
+.button:active {
+  border: 2px solid var(--pure-white);
+}
+.signOut {
+  position: relative;
+  font-size: var(--heading-2-size);
+  line-height: 110%;
+  font-weight: 600;
+  font-family: var(--text3);
+  color: var(--orange);
+  text-align: center;
+}
+.carddetails1 {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button1 {
+  cursor: pointer;
+  border: 2px solid var(--orange);
+  padding: var(--padding-5xs);
+  background-color: var(--pure-white);
+  flex: 1;
+  border-radius: var(--br-sm);
+  box-sizing: border-box;
+  height: 70px;
+  flex-direction: column;
+}
+.button1:hover {
+  background-color: var(--orange);
+  color: var(--pure-white);
+}
+.button1:active {
+  border: 2px solid var(--pure-white);
+}
+
+.button1,
+.containerbuttons,
+.popupaccountinfo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.containerbuttons {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 6px;
+  gap: var(--gap-5xs);
+  font-size: var(--heading-2-size);
+  color: var(--orange);
+}
+.popupaccountinfo {
+  border-radius: 30px;
+  background-color: rgba(62, 62, 62, 0.95);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  gap: 15px;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  font-size: var(--heading-1-size);
+  color: var(--sorta-dark);
+  font-family: var(--text3);
+}
+@media screen and (max-width: 1200px) {
+  .frameprofiledetails {
+    display: flex;
+  }
+  .buyTokens:active,
+  .buyTokens:hover,
+  .signOut:active,
+  .signOut:hover {
+    color: var(--pure-white);
+  }
+}
+@media screen and (max-width: 760px) {
+  .frameprofiledetails {
+    display: flex;
+  }
+  .buyTokens:active,
+  .buyTokens:hover,
+  .signOut:active,
+  .signOut:hover {
+    color: var(--pure-white);
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameprofiledetails {
+    display: flex;
+  }
+}

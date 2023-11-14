@@ -1,0 +1,44 @@
+/* Login.css */
+
+/* Styles for the Login component container */
+div {
+    text-align: center;
+   /* margin-top: 50px; /* Adjust as needed */
+  }
+  
+  /* Styles for the welcome message */
+  h1 {
+    font-size: 2em;
+    color: #333; /* Adjust the color as needed */
+  }
+  
+  /* Styles for the description paragraph */
+  p {
+    font-size: 1.2em;
+    color: #666; /* Adjust the color as needed */
+  }
+  
+  /* Styles for the Google logo */
+  .google-logo {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    /* margin-right: 8px; /* Adjust the margin as needed */
+  }
+  
+  /* Styles for the login button */
+  .button {
+    background-color: #4285f4; /* Google blue color, adjust as needed */
+    color: #fff; /* Text color, adjust as needed */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the login button */
+  .button:hover {
+    background-color: #3c78d8; /* Darker shade for hover effect, adjust as needed */
+  }
+  

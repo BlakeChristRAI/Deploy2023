@@ -1,0 +1,115 @@
+
+
+.ImageToImage {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.label-container label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  width: 30%; /* Adjust the width as needed */
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dropzone {
+  border: 2px dashed #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-preview-box {
+  margin-top: 10px;
+}
+
+.image-preview {
+  width: 80px; /* Set both width and height to create a square box */
+  height: 80px; /* Set your preferred fixed height */
+  object-fit: cover; /* Ensure the image covers the fixed height */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px; /* Add some spacing between preview images */
+  margin-bottom: 10px; /* Add some spacing between rows of preview images */
+}
+
+
+
+button {
+  padding: 10px;
+  background-color: #2bff32;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #ff0000;
+}
+
+.success-message {
+  color: #008000;
+}
+
+
+.dropzone {
+  width: 50%; /* Adjust the width as needed */
+  border: 2px dashed #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+}
+

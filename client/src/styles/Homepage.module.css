@@ -1,0 +1,94 @@
+.imageIcon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.cardimg,
+.containerimages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cardimg {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: 0 4.113765716552734px 4.11px rgba(0, 0, 0, 0.25);
+  width: 392.86px;
+  height: 308px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+}
+.cardimg:hover {
+  border: 2px solid var(--orange);
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px rgba(242, 135, 5, 0.8);
+}
+.cardimg:active {
+  border: 3px solid var(--orange);
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px #f28705;
+}
+.containerimages {
+  align-self: stretch;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 8px 16px; 
+  gap: 27.71px;
+}
+.homepage {
+  position: relative;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)),
+    conic-gradient(
+      from 0deg at 50% 50%,
+      rgba(255, 255, 255, 0.2) -56.25deg,
+      rgba(242, 135, 6, 0.2) 6.5deg,
+      rgba(50, 190, 200, 0.4) 116.25deg,
+      rgba(255, 255, 255, 0.2) 303.75deg,
+      rgba(242, 135, 6, 0.2) 366.5deg
+    ),
+    rgba(249, 249, 249, 0.7);
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-21xl) var(--padding-21xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xs);
+}
+@media screen and (max-width: 1200px) {
+  .cardimg {
+    width: 308px;
+    height: 308px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .cardimg {
+    width: 308px;
+    height: 308px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cardimg {
+    width: 378px;
+    height: 378px;
+  }
+  .homepage {
+    padding: var(--padding-5xs) var(--padding-5xs) var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
+
